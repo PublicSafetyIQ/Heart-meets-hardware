@@ -5,25 +5,24 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-between px-6 py-12">
 
-      {/* Header */}
-      <div className="w-full max-w-md text-center">
-        <img src="/logo.png" alt="PublicSafetyIQ" width="120" style={{margin:'0 auto 16px',display:'block',opacity:0.9}} />
-        <h1 className="font-serif text-5xl text-hmh-cream leading-tight mb-3">
-          Heart Meets Hardware
-        </h1>
-        <p className="text-hmh-cream-dim text-xl italic mb-1">
-          Serving People in a Digital World
-        </p>
-        <div className="w-16 h-px bg-hmh-gold mx-auto mt-6 mb-8" />
-        <p className="text-hmh-cream text-2xl font-semibold leading-relaxed mb-3">
-          Welcome. You are in the right place.
-        </p>
-        <p className="text-hmh-cream-dim text-lg mt-2 leading-relaxed">
+      <div className="w-full max-w-md">
+        <div style={{display:'flex',alignItems:'center',gap:'20px',marginBottom:'24px'}}>
+          <img src="/logo.png" alt="Heart Meets Hardware" style={{width:'140px',height:'140px',objectFit:'contain',flexShrink:0}} />
+          <div>
+            <h1 className="font-serif text-4xl text-hmh-cream leading-tight">
+              Heart Meets Hardware
+            </h1>
+            <p className="text-hmh-cream-dim text-lg italic mt-2">
+              Serving People in a Digital World
+            </p>
+          </div>
+        </div>
+        <div className="w-full h-px bg-hmh-gold mb-8" style={{opacity:0.5}} />
+        <p className="text-hmh-cream text-xl leading-relaxed text-center">
           Start by taking the communication style assessment below.
         </p>
       </div>
 
-      {/* Primary CTA */}
       <div className="w-full max-w-md my-10">
         <Link href="/assessment">
           <button className="w-full bg-hmh-gold text-hmh-black font-bold text-2xl py-6 rounded-lg tracking-wide hover:bg-hmh-gold-light active:scale-95">
@@ -32,7 +31,6 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Navigation */}
       <nav className="w-full max-w-md">
         <div className="border border-hmh-gray-light rounded-lg overflow-hidden">
           <NavLink href="/polls"     label="Live Polls"  sub="Participate during the session" />
