@@ -22,7 +22,6 @@ function ResultContent() {
   const [sending, setSending] = useState(false);
   const [saved, setSaved]     = useState(false);
 
-  // Save result to Supabase once on load
   useEffect(() => {
     async function saveResult() {
       await supabase.from('disc_responses').insert({
@@ -136,7 +135,7 @@ function ResultContent() {
       </div>
 
       {/* DiSC resources link */}
-      <a
+      
         href="https://www.discprofile.com/what-is-disc/disc-styles"
         target="_blank"
         rel="noreferrer"
@@ -147,13 +146,8 @@ function ResultContent() {
 
       {/* Navigation */}
       <div className="space-y-3">
-        <Link href="/polls">
-          <button className="w-full border border-hmh-gold text-hmh-gold py-3 rounded-lg text-sm font-semibold hover:bg-hmh-gold hover:text-hmh-black transition-colors">
-            Go to Live Polls
-          </button>
-        </Link>
         <Link href="/">
-          <button className="w-full border border-hmh-gray-light text-hmh-cream-dim py-3 rounded-lg text-sm hover:border-hmh-cream-dim transition-colors">
+          <button className="w-full border border-hmh-gold text-hmh-gold py-4 rounded-lg text-lg font-semibold hover:bg-hmh-gold hover:text-hmh-black transition-colors">
             Back to Home
           </button>
         </Link>
