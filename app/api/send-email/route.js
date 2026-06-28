@@ -36,8 +36,7 @@ export async function POST(request) {
 </head>
 <body>
 <div class="container">
-  <p class="label">Arizona Fire Chiefs Conference 2026</p>
-  <p class="label" style="margin-top:4px;">Heart Meets Hardware</p>
+  <p class="label">Heart Meets Hardware</p>
 
   <hr class="divider"/>
 
@@ -84,10 +83,35 @@ export async function POST(request) {
 
   <hr class="divider"/>
 
-  <p class="body-text" style="font-size:13px; font-family: system-ui, sans-serif;">
-    Want to go deeper on your style?
-    <a href="https://www.discprofile.com/what-is-disc/disc-styles" class="link"> Learn more about DiSC →</a>
-  </p>
+  <div class="card">
+    <p class="card-label">What is DiSC?</p>
+    <p class="card-text">
+      DiSC is a research-backed personality model used by millions of professionals worldwide to understand communication styles, improve teamwork, and reduce conflict. It is not about putting people in a box — it is about understanding how you naturally show up and how to flex your style for others.
+    </p>
+    <p style="margin-top:12px;">
+      <a href="https://www.discprofile.com/what-is-disc/disc-styles" class="link" style="font-family:system-ui,sans-serif;font-size:13px;">Learn more about the four DiSC styles →</a>
+    </p>
+  </div>
+
+  <div class="card" style="margin-top:4px;">
+    <p class="card-label">Take the Full Assessment</p>
+    <p class="card-text">
+      Today you took an abbreviated version. The official DiSC assessment goes deeper — a full personalized report with detailed strategies for working with every other style. You can purchase an individual profile directly through the publisher.
+    </p>
+    <p style="margin-top:12px;">
+      <a href="https://www.discprofile.com" class="link" style="font-family:system-ui,sans-serif;font-size:13px;">Take the full DiSC assessment at discprofile.com →</a>
+    </p>
+  </div>
+
+  <div class="card" style="margin-top:4px;">
+    <p class="card-label">Bring DiSC Training to Your Department</p>
+    <p class="card-text">
+      Ashley offers DiSC-based communication training designed specifically for fire and EMS agencies. If you want your team to understand each other the way you started to today, reach out.
+    </p>
+    <p style="margin-top:12px;">
+      <a href="mailto:ashley@publicsafetyiq.ai" class="link" style="font-family:system-ui,sans-serif;font-size:13px;">Contact Ashley → ashley@publicsafetyiq.ai</a>
+    </p>
+  </div>
 
   <div class="footer">
     <p>Presented by <strong style="color:#C9A23E;">Ashley Losch</strong></p>
