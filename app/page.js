@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -8,24 +7,14 @@ export default function Home() {
 
       {/* Header */}
       <div className="w-full max-w-md text-center">
-        <div className="relative flex items-center justify-center py-6">
-          <Image
-            src="/logo.png"
-            alt="PublicSafetyIQ"
-            width={220}
-            height={220}
-            className="absolute opacity-10"
-          />
-          <div className="relative z-10">
-            <h1 className="font-serif text-5xl text-hmh-cream leading-tight mb-3">
-              Heart Meets Hardware
-            </h1>
-            <p className="text-hmh-cream-dim text-xl italic">
-              Serving People in a Digital World
-            </p>
-          </div>
-        </div>
-        <div className="w-16 h-px bg-hmh-gold mx-auto mt-4 mb-8" />
+        <img src="/logo.png" alt="PublicSafetyIQ" width="120" style={{margin:'0 auto 16px',display:'block',opacity:0.9}} />
+        <h1 className="font-serif text-5xl text-hmh-cream leading-tight mb-3">
+          Heart Meets Hardware
+        </h1>
+        <p className="text-hmh-cream-dim text-xl italic mb-1">
+          Serving People in a Digital World
+        </p>
+        <div className="w-16 h-px bg-hmh-gold mx-auto mt-6 mb-8" />
         <p className="text-hmh-cream text-2xl font-semibold leading-relaxed mb-3">
           Welcome. You are in the right place.
         </p>
@@ -52,7 +41,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Footer */}
       <p className="text-hmh-cream-dim text-sm mt-8 text-center">
         Presented by Ashley Losch · PublicSafetyIQ
       </p>
