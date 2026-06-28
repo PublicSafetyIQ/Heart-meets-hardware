@@ -5,20 +5,16 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-between px-6 py-12">
 
-      <div className="w-full max-w-md">
-        <div style={{display:'flex',alignItems:'center',gap:'20px',marginBottom:'24px'}}>
-          <img src="/logo.png" alt="Heart Meets Hardware" style={{width:'200px',height:'200px',objectFit:'contain',flexShrink:0}} />
-          <div style={{textAlign:'center'}}>
-            <h1 className="font-serif text-4xl text-hmh-cream leading-tight">
-              Heart Meets Hardware
-            </h1>
-            <p className="text-hmh-cream-dim text-lg italic mt-2">
-              Serving People in a Digital World
-            </p>
-          </div>
-        </div>
-        <div className="w-full h-px bg-hmh-gold mb-8" style={{opacity:0.5}} />
-        <p className="text-hmh-cream text-xl leading-relaxed text-center">
+      <div className="w-full max-w-md text-center">
+        <img src="/logo.png" alt="Heart Meets Hardware" style={{width:'200px',margin:'0 auto 20px',display:'block'}} />
+        <h1 className="font-serif text-5xl text-hmh-cream leading-tight mb-2">
+          Heart Meets Hardware
+        </h1>
+        <p className="text-hmh-cream-dim text-xl italic whitespace-nowrap">
+          Serving People in a Digital World
+        </p>
+        <div className="w-full h-px bg-hmh-gold my-8" style={{opacity:0.5}} />
+        <p className="text-hmh-cream text-xl leading-relaxed">
           Start by taking the communication style assessment below.
         </p>
       </div>
@@ -43,19 +39,3 @@ export default function Home() {
         Presented by Ashley Losch · PublicSafetyIQ
       </p>
     </main>
-  );
-}
-
-function NavLink({ href, label, sub, border }) {
-  return (
-    <Link href={href}>
-      <div className={`flex items-center justify-between px-5 py-5 hover:bg-hmh-gray active:bg-hmh-gray-light cursor-pointer ${border ? 'border-t border-hmh-gray-light' : ''}`}>
-        <div>
-          <p className="text-hmh-cream font-semibold text-xl">{label}</p>
-          <p className="text-hmh-cream-dim text-base mt-0.5">{sub}</p>
-        </div>
-        <span className="text-hmh-gold text-2xl">›</span>
-      </div>
-    </Link>
-  );
-}
