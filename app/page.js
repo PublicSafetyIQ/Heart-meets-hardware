@@ -7,8 +7,8 @@ export default function Home() {
 
       <div className="w-full max-w-md">
         <div style={{display:'flex',alignItems:'center',gap:'20px',marginBottom:'24px'}}>
-          <img src="/logo.png" alt="Heart Meets Hardware" style={{width:'140px',height:'140px',objectFit:'contain',flexShrink:0}} />
-          <div>
+          <img src="/logo.png" alt="Heart Meets Hardware" style={{width:'200px',height:'200px',objectFit:'contain',flexShrink:0}} />
+          <div style={{textAlign:'center'}}>
             <h1 className="font-serif text-4xl text-hmh-cream leading-tight">
               Heart Meets Hardware
             </h1>
